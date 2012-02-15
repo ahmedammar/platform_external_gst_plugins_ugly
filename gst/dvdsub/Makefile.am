@@ -11,7 +11,7 @@ noinst_HEADERS = gstdvdsubdec.h gstdvdsubparse.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstdvdsub -:SHARED libgstdvdsub \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstdvdsub_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstdvdsub_la_CFLAGS) \

@@ -16,7 +16,7 @@ noinst_HEADERS = gstmad.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstmad -:SHARED libgstmad \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstmad_la_SOURCES) \
 	 -:CPPFLAGS $(CPPFLAGS) \

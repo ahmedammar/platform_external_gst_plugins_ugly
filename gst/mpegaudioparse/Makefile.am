@@ -11,7 +11,7 @@ noinst_HEADERS = gstmpegaudioparse.h gstxingmux.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstmpegaudioparse -:SHARED libgstmpegaudioparse \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstmpegaudioparse_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstmpegaudioparse_la_CFLAGS) \
