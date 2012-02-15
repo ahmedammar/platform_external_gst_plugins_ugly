@@ -12,7 +12,7 @@ noinst_HEADERS = gstdvdlpcmdec.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstdvdlpcmdec -:SHARED libgstdvdlpcmdec \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstdvdlpcmdec_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstdvdlpcmdec_la_CFLAGS) \

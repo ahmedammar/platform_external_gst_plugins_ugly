@@ -24,7 +24,7 @@ EXTRA_DIST = $(preset_DATA)
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstx264 -:SHARED libgstx264 \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstx264_la_SOURCES) \
 	 -:CPPFLAGS $(CPPFLAGS) \
